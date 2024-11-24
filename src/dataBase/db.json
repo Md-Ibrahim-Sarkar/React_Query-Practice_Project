@@ -287,7 +287,24 @@
         "rate": 3.6,
         "count": 145
       }
+    },
+    {
+      "id": "634203b6-0e81-4b95-92bd-98d0c038fa7d",
+      "title": "Veniam temporibus q",
+      "price": "330",
+      "category": "Autem minus quo enim",
+      "image": "Porro quo qui corrup",
+      "rating": "10",
+      "description": "Non nisi qui consect"
+    },
+    {
+      "id": "39fcbe6b-d034-425d-ba6e-e8cd489e92d5",
+      "title": "Veniam temporibus q",
+      "price": "330",
+      "category": "Autem minus quo enim",
+      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "rating": "10",
+      "description": "Non nisi qui consect"
     }
-    
   ]
 }
