@@ -29,7 +29,7 @@ function Details({ id }) {
                     </div>
                     <p><strong>Name: </strong>{product.title}</p>
                     <div className="flex items-center mb-3">
-                        <p className="mr-2 text-lg font-semibold text-gray-900">${product.price}</p>
+                        <p className="mr-2 text-lg font-semibold text-gray-900">Price: ${product.price}</p>
                         <p className="ml-auto text-base font-medium text-green-500">20% off</p>
                     </div>
                     <p><strong>Description: </strong>{product.description}</p>
