@@ -8,7 +8,7 @@ export const ProductContext = createContext()
 export const ContextProvider = ({children}) => {
 
   const [id, setId] = useState(1)
-  const [page, setPage] = useState(2)
+  const [page, setPage] = useState(1)
  
     let value = {
         id,
