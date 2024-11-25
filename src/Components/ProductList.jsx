@@ -50,7 +50,8 @@ function ProductList() {
               <button
                 onClick={() => setPage(page + 1)}
                 disabled={page === 4}
-                className={`bg-lime-600 px-3 py-1 rounded-md font-semibold hover:scale-105 ${page === 4 ? 'bg-gray-400 cursor-not-allowed' : 'bg-lime-600 hover:scale-105'}`}
+                className={`px-3 py-1 rounded-md font-semibold ${page === 4 ? "bg-gray-400 cursor-not-allowed" : "bg-lime-600 hover:scale-105"
+                }`}
               >
                 Next
               </button>
