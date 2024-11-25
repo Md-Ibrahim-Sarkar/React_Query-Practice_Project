@@ -5,20 +5,24 @@ import { useContext } from "react";
 import { ProductContext } from "../Context/Context";
 
 const getData = async ({ queryKey }) => {
-  const [, { page }] = queryKey;
+  const [,  page ] = queryKey;
   console.log(queryKey);
 
-  const response = await axios.get(`http://localhost:8000/products/?_page=${page}&_per_page=6`);
-  return response.data.data;
+  const response = await axios.get(`https://all-products-8lh7.onrender.com/products?_page=${page}&_limit=6`);
+  console.log(response.data);
+  
+  return response.data;
 };
 
 function ProductList() {
   const { page, setPage } = useContext(ProductContext);
 
   const { data: products, isFetching, error } = useQuery({
-    queryKey: ['products', { page }],
+    queryKey: ['products', page],
     queryFn: getData,
   });
+  
+  if(isFetching) return <div>Products is Leading...</div>
 
   return (
     <>

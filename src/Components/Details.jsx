@@ -5,7 +5,7 @@ import axios from "axios"
 
 const getData = async ({ queryKey }) => {
 
-    const response = await axios.get(`http://localhost:8000/products/${queryKey[1]}`)
+    const response = await axios.get(`https://all-products-8lh7.onrender.com/products/${queryKey[1]}`)
     return response.data
 }
 
@@ -27,8 +27,12 @@ function Details({ id }) {
                     <div className="w-full flex justify-center">
                         <img className="max-h-[150px] object-cover" src={product.image} alt="" />
                     </div>
-                    <p><strong>Name:</strong>{product.title}</p>
-                    <p><strong>description:</strong>{product.description}</p>
+                    <p><strong>Name: </strong>{product.title}</p>
+                    <div className="flex items-center mb-3">
+                        <p className="mr-2 text-lg font-semibold text-gray-900">${product.price}</p>
+                        <p className="ml-auto text-base font-medium text-green-500">20% off</p>
+                    </div>
+                    <p><strong>Description: </strong>{product.description}</p>
                 </div>
 
             )}
