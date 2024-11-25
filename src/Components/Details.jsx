@@ -5,7 +5,7 @@ import axios from "axios"
 
 const getData = async ({ queryKey }) => {
 
-    const response = await axios.get(`https://all-products-8lh7.onrender.com/products/${queryKey[1]}`)
+    const response = await axios.get(`http://localhost:8000/products/${queryKey[1]}`)
     return response.data
 }
 

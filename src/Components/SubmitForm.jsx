@@ -7,7 +7,7 @@ function SubmitForm() {
     const mutation = useMutation({
         mutationKey: ['product'],
         mutationFn: (variables) => {
-            return axios.post("https://all-products-8lh7.onrender.com/products", variables);
+            return axios.post("http://localhost:8000/products", variables);
         },
         onSuccess: () => {
             queryClient.invalidateQueries(["products"]);

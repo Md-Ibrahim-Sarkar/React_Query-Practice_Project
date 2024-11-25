@@ -23,7 +23,7 @@ function ProductList() {
   });
   console.log(products);
   
-  if(isFetching) return <div>Products is Leading...</div>
+  // if(isFetching) return <div>Products is Leading...</div>
 
   return (
     <>
@@ -44,8 +44,7 @@ function ProductList() {
                 products.prev &&
                  <button
                  onClick={() => setPage(products.prev)}
-                 className={`px-3 py-1 rounded-md font-semibold ${page === 1 ? "bg-gray-400 cursor-not-allowed" : "bg-lime-600 hover:scale-105"
-                   }`}
+                 className={`px-3 py-1 rounded-md font-semibold bg-lime-600`}
                >
                  Prev
                </button>
@@ -54,7 +53,7 @@ function ProductList() {
                 products.next && 
                 <button
                 onClick={() => setPage(products.next)}
-                className={`px-3 py-1 rounded-md font-semibold`}
+                className={`px-3 py-1 rounded-md  bg-lime-600 font-semibold`}
               >
                 Next
               </button>
